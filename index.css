@@ -1,0 +1,161 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+}
+
+.btncontainer{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+
+}
+
+.tablecontainer{
+  width: 70%;
+}
+
+.currency{
+  margin: 1rem;
+}
+.date{
+  margin: 1rem;
+}
+.button{
+  margin: 1rem;
+}
+
+table.responsive-table th:nth-child(1) {
+  cursor:pointer;
+}
+
+tbody tr:nth-child(even) {
+  background: #eee;
+}
+
+body{
+  padding: 1em;
+}
+table{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+table th,
+table td{
+  text-align: left;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+table.layout{
+  width: 100%;
+  border-collapse: collapse;
+}
+table.display{
+  margin: 1em 0;
+}
+table.display th,
+table.display td{
+ 
+  padding: .5em 1em;
+}
+
+table.display th{ background: #A9A9A9; }
+
+
+@media (max-width: 30em){
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btncontainer{
+    width: 50vw;
+}
+
+.tablecontainer{
+  width: 100%;
+}
+  
+table{
+  border-top: none;
+  border-bottom: none;
+}
+
+table th,
+table td{
+  text-align: left;
+  border-left: none;
+  border-right: none;
+} 
+  
+  
+  
+  tbody tr {
+    background: #eee;
+  }
+
+  table.display th{ 
+    background: none;
+    border: none;
+  }
+
+    table.responsive-table th:nth-child(2),
+    table.responsive-table th:nth-child(3){
+      display: none;
+    }
+  table.display td{
+    padding: .5em;
+  }
+    
+  table.responsive-table td:nth-child(1):before{
+    content: 'Currency';
+  }
+  table.responsive-table td:nth-child(2):before{
+    content: 'Buy';
+  }
+  table.responsive-table td:nth-child(3):before{
+    content: 'Sell';
+  }
+
+  table.responsive-table td:nth-child(1),
+  table.responsive-table td:nth-child(2),
+  table.responsive-table td:nth-child(3){
+    padding-left: 50%;
+  }
+  table.responsive-table td:nth-child(1):before,
+  table.responsive-table td:nth-child(2):before,
+  table.responsive-table td:nth-child(3):before{
+    position: absolute;
+    left: .5em;
+    font-weight: bold;
+  }
+  
+    table.responsive-table tr,
+    table.responsive-table td{
+        display: block;
+    }
+    table.responsive-table tr{
+        position: relative;
+        margin-bottom: 1em;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    }
+    table.responsive-table td{
+        border-top: none;
+    }}
+
+  
+    @media screen and (max-width: 1024px) and (min-width: 768px){
+
+      .container{
+   width: 95vw;
+      }
+    }
